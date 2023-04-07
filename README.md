@@ -13,9 +13,10 @@
 
 <h2>Task 2 </h2>
 <h3><a href = "">ISRO</h3>
-<h3><a href =" ">Live Link :</h3>
+<h3><a href =" https://shiny-dodol-bdd49c.netlify.app">Live Link :</h3>
 <p>This project is build with the help of HTML CSS and JavaScript . I used fetch API to get the API of ISRO</p>
 
+![Output](./Task2_ISRO/isro.PNG)
 
 <br>
 
