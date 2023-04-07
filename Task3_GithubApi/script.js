@@ -123,4 +123,4 @@ function updateProfile(data) {
   }
 }
 
-init();
+updateProfile();

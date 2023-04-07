@@ -29,7 +29,7 @@
 
 The application uses the GitHub API to search for users based on their username. When a user submits a search query, the application sends a GET request to the API, which returns a list of matching users along with their profile information. The application then renders the results using JavaScript and displays them on the page.
 
-##  [Live Link](https://elaborate-klepon-e394de.netlify.app).
+##  [Live Link](https://beamish-druid-75a7ef.netlify.app).
 
 ![Output](./Task3_GithubApi/git.png)
 
