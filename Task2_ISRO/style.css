@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #23C4ED;
+}
+
+.title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+h1{
+    color: brown;
+}
+#result{
+    display: flex;
+    width: 10rem;
+    
+}
+.result{
+    display: flex;
+    width: 10rem;
+}
+.bySearch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+
+}
+
+.result{
+    padding: 5px;
+    margin: 5px;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+input{
+ 
+  
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+      
+}
+
+button{
+    padding: 5px;
+    background: violet;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github-Userfinder</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+        tailwind.config = {
+        theme: {
+          screens:{
+              'sm':'360px',
+              'md':'768px',
+              'lg':'930px',
+              'xl': '1260px',   
+          }
+          ,
+          fontFamily:{
+              'pfont':['Inter,sans-serif']
+          },
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="container lg:w-[100%] justify-center items-center text-center sm:w-[100%]">
+      <header class="header">
+        <h1 class="title justify-center items-center text-center">
+          Find Github user.....
+        </h1>
+      </header>
+
+      <main>
+        <div id="app">
+          <div class="searchbar-container active">
+            <input
+              type="search "
+              class="items-center justify-center text-center mt-4 lg:ml-[22rem] sm:ml-7  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[15rem] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              name="user-input"
+              id="input"
+              placeholder="username..."
+              required
+            />
+            <div class="error">
+              <p id="no-results">no search results</p>
+            </div>
+            <button
+              class="btn-search border-solid border-2 border-slate-50 rounded-[30px] pl-8 pr-8 pt-1 pb-1 text-black bg-white text-sm font-bold hover:text-cyan-600 hover:drop-shadow-xl"
+              id="submit"
+            >
+              Search
+            </button>
+          </div>
+
+          <div class="profile-container bg-gray-700 rounded-lg p-[24px]">
+            <div
+              class="profile-content flex flex-col justify-evenly gap-12 pl-[15rem]"
+            >
+              <div class="profile-header flex gap-8 mb-[10px] pl-[8rem]">
+                <img
+                  id="avatar"
+                  class="lg:w-[70px] rounded-[30%] sm:w-[40px]"
+                  src="#"
+                  alt=""
+                />
+                <div class="profile-info-wrapper flex flex-col justify-between ">
+                  <div class="profile-name flex flex-col justify-between sm:ml-[-30rem]">
+                    <h2 id="name" class="text-cyan-600"></h2>
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      id="user"
+                    ></a>
+                  </div>
+                  <p id="date text-cyan-600 "></p>
+                </div>
+              </div>
+
+              <p id="bio" class="text-white-900 text-center lg:mr-[9rem] sm:ml-[-30rem]"></p>
+
+              <div
+                class=" profile-stats-wrapper lg:flex justify-between p-[18px] mr-[12rem] text-center rounded-[10px] sm:flex-col sm:ml-[-150px]"
+              >
+                <div class="profile-stat flex flex-col w-[100%] gap-2">
+                  <p class="stat-title text-sm">Repos</p>
+                  <p id="repos" class="stat-value text-sm font-bold"></p>
+                </div>
+                <div class="profile-stat flex flex-col w-[100%] gap-2">
+                  <p class="stat-title text-sm">Followers</p>
+                  <p id="followers" class="stat-value text-sm font-bold"></p>
+                </div>
+                <div class="profile-stat flex flex-col w-[100%] gap-2">
+                  <p class="stat-title text-sm">Following</p>
+                  <p id="following" class="stat-value text-sm font-bold"></p>
+                </div>
+              </div>
+
+              <div
+                class="profile-bottom-wrapper flex flex-col justify-between gap-12 sm:ml-[-150px]"
+              >
+                <div
+                  class="profile-info w-[50%] flex gap-6 justify-center items-center"
+                >
+                  <div class="bottom-icons w-[15px]">
+                    <img src="./assets/images/location-icon.svg" alt="" />
+                  </div>
+                  <p id="location"></p>
+                </div>
+                <div
+                  class="profile-info w-[50%] flex gap-6 justify-center items-center"
+                >
+                  <div class="bottom-icons w-[15px]">
+                    <img src="./assets/images/website-icon.svg" alt="" />
+                  </div>
+                  <a href="#" id="page"></a>
+                </div>
+                <div
+                  class="profile-info w-[50%] flex gap-6 justify-center items-center"
+                >
+                  <div class="bottom-icons w-[15px]">
+                    <img src="./assets/images/twitter-icon.svg" alt="" />
+                  </div>
+                  <a href="#" id="twitter"></a>
+                </div>
+                <div
+                  class="profile-info w-[50%] flex gap-6 justify-center items-center"
+                >
+                  <div class="bottom-icons w-[15px]">
+                    <img src="./assets/images/company-icon.svg" alt="" />
+                  </div>
+                  <p id="company"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

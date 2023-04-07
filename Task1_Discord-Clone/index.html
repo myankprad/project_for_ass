@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+        theme: {
+          screens:{
+              'sm':'360px',
+              'md':'768px',
+              'lg':'930px',
+              'xl': '1260px',   
+          }
+          ,
+          fontFamily:{
+              'pfont':['Inter,sans-serif']
+          },
+        }
+      }
+    </script>
+    <title>Discord Clone</title>
+    <style>
+      ::-webkit-scrollbar {
+      width:5px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      border-radius: 5px;
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #01baf3; 
+      border-radius: 10px;
+    
+    }
+    </style>
+</head>
+<body class="overflow-x-hidden pt-2">
+    <section class=" bg-[#404eed] pb-9 pt-4 sm  md">
+        
+      <!-- navbar -->
+        <nav class="flex justify-evenly items-center h-25 pb-9 text-white font-medium font-lg">
+           
+        <div class="flex flex-col gap-1 lg:hidden cursor-pointer ">
+          <div class="h-[3px] w-[25px] bg-white"></div>
+          <div class="h-[3px] w-[25px] bg-white"></div>
+          <div class="h-[3px] w-[25px] bg-white"></div>
+      </div>
+          <h1> <i class="fa-brands fa-discord fa-xl"></i> Discord</h1>
+            <ul class="flex justify-evenly items-center w-6/12 lg:flex hidden gap-5 ">
+                <li class="hover:underline cursor-pointer">Download</li>
+                <li class="hover:underline cursor-pointer">Nitro</li>
+                <li class="hover:underline cursor-pointer">Discover</li>
+                <li class="hover:underline cursor-pointer">Safety</li>
+                <li class="hover:underline cursor-pointer">Support</li>
+                <li class="hover:underline cursor-pointer">Blogs</li>
+                <li class="hover:underline cursor-pointer">Careers</li>
+            </ul>
+            <div class="border-solid border-2 border-slate-50 rounded-full py-[0.4%] px-[0.60%] text-black bg-white font-medium font-md hover:text-cyan-600 hover:drop-shadow-xl">
+                <button>Login</button>
+            </div>
+        </nav>
+
+        <!-- hero-section -->
+        <main class="flex flex-col  items-center h-[80vh] pt-2 bg-[url('./assests/1.svg')]">
+            <h1 class="font-bold top-4 lg:text-[60px] font-pfont text-white sm:text-[40px]">IMAGINE A PLACE...</h1>
+            <div class="px-[25%] py-0 lg:text-[20px] sm:text-[10px] font-sans pb-9 text-white">...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</div>
+           <div class="flex justify-evenly items-center gap-10 w-[30%] pt-4">
+                <button class="border-solid border-2 border-slate-50 rounded-[30px]  pl-8 pr-8 pt-1 pb-1  text-black bg-white text-sm font-bold hover:text-cyan-600 hover:drop-shadow-xl " ><i class="fas fa-arrow-down"></i> Download for Windows</button>
+                <button class="border-solid border-2 border-black rounded-[30px]  pl-8 pr-8 pt-1 pb-1   text-white bg-slate-900 font-bold text-sm hover:text-cyan-600 hover:drop-shadow-xl">Open Discord in your browser</button>
+                
+            </div>
+                
+                </div>
+
+                <div class="flex justify-between gap-12 bg-[#404eed]">
+                  <img src="./assests/2.svg" class=" pb-12 pr-[120px] mr-[50px] lg:ml-[-150px] sm:ml-[-100px] " alt="">
+                  <img src="./assests/3.svg" class=" pb-12 pl-[120px] " alt="">
+                </div>
+                
+            
+                
+        </main>
+
+       
+    </section>
+    
+   
+</body>
+</html>
